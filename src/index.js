@@ -5,9 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const persistentTasksFromDB = [
+    { id: "0", name: "Init task 1", status: "completed" },
+];
+
+
+
 root.render(
   <React.StrictMode>
-    <App />
+    <App tasks={persistentTasksFromDB}/>
   </React.StrictMode>
 );
 
